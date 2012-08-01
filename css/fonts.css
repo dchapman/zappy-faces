@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'KomikaDisplayRegular';
+    src: url('../fonts/komika_display-webfont.eot');
+    src: url('../fonts/komika_display-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/komika_display-webfont.woff') format('woff'),
+         url('../fonts/komika_display-webfont.ttf') format('truetype'),
+         url('../fonts/komika_display-webfont.svg#KomikaDisplayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
