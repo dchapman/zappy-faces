@@ -234,15 +234,23 @@ body {
     width: 90%;
 }
 
-h1, h2, p, span, a {
+#container h1, #container h2, #container p, #container span, #container a {
 	display: block;
     font-family: 'KomikaDisplayRegular', Arial, Helvetica, sans-serif !important;
   	text-align: center;
 	text-transform: uppercase;
-	zoom: 1;
+
+    /*-webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6ñIE9 */
+        M11=0.9961946980917455, M12=0.08715574274765817, M21=-0.08715574274765817, M22=0.9961946980917455, sizingMethod='auto expand');
+    zoom: 1;*/
 }
 
-.buy-button {
+.buy-button:link, .buy-button:visited, .buy-button {
     color: #ec2227;
     display: block;
     cursor: pointer;
@@ -250,6 +258,13 @@ h1, h2, p, span, a {
     line-height: 34px;
     padding-top: 8%;
     text-decoration: none;
+}
+
+.png {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ececec,endColorstr=#ececec)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ececec,endColorstr=#ececec);   /* IE6 & 7 */
+    zoom: 1;
 }
 
 #left-content {
@@ -264,6 +279,12 @@ h1, h2, p, span, a {
 #right-content {
     float: left;
     width: 46%;
+}
+
+.addthis_toolbox {
+    margin: 0 auto 20px;
+    max-width: 970px;
+    width: 91%;
 }
 
 
@@ -314,15 +335,41 @@ h1 {
 Shop Page
 ***/
 
+#text-container {
+    width: 40%;
+}
+
 .sheet {
     display: block;
     float: left;
     height: auto;
-    max-height: 670px;
+    max-height: 672px;
     max-width: 440px;
     width: 100%;
 }
 
+.shop p {
+    color: #474747;
+}
+
+.shop form {
+    height: 34px;
+    margin-top: 6%;
+}
+
+.shop form input {
+    display: block;
+    margin: 0 auto;
+}
+
+.shop #container span {
+    color: #9f9f9f;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.shop #container h1 {font-size: 100px; line-height: .6em;}
+.shop #container p, .shop #container span {font-size: 12px}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -330,9 +377,44 @@ Shop Page
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+        .shop h1 {
+            font-size: 100px;
+        }
+    }
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+        .shop #container h1 {
+            font-size: 100px;
+        }
+
+        a {
+            font-size: 26px;
+        }
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        .shop #container h1 {
+            font-size: 60px;
+        }
+
+        .shop #container a {
+            font-size: 40px;
+        }
+    }
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+        .shop #container h1 {
+            font-size: 60px;
+        }
+    }
 
 
 /* ==|== non-semantic helper classes ========================================
