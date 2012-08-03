@@ -12,7 +12,7 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Zappy Faces</title>
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -30,49 +30,70 @@
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="../js/libs/modernizr-2.5.3.min.js"></script>
 </head>
-<body>
+<body class="home">
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
 
-  </header>
-  <div role="main" id="main">
-    <div id="content">
-        <a href="../index.html">
-        	<img id="logo" src="../img/logo.png" alt="Zappy Face Stickers" title="Zappy Face Stickers!" />
-        </a>
-        
-        <h1 class="fit-text">4.99</h1>
-        <h2 class="fit-text">Free Shipping</h2>
-        <a href="#" class="fit-text buy-button">Buy it!</a>
-        <p>(NY RESIDENTS PAY 8.875% SALES TAX)</p>
+<div role="main" id="main">
+    <div id="container">
+        <div id="content" class="clearfix">
+            <div id="left-content">
+                <a href="../">
+                    <img src="../img/logo.png" class="logo" alt="Zappy Face Stickers" />
+                </a>
+
+                <h2 class="">4.99</h2>
+                <p class="">Free shipping</p>
+
+                <a href="#" class="buy-button">Buy it now!</a>
+
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="QYR4PRLDEGQZN">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+                <span class="disclaimer fit-text">(NY RESIDENTS PAY 8.875% SALES TAX)</span>
+            </div>
+
+            <div id="right-content">
+                <img src="../img/sheet.png" class="sheet" alt=""/>
+            </div>
+        </div>
     </div>
-    
-    <div id="sheet">
-    	<img src="../img/sheet.png" />
+
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style ">
+    <a class="addthis_button_preferred_1"></a>
+    <a class="addthis_button_preferred_2"></a>
+    <a class="addthis_button_preferred_3"></a>
+    <a class="addthis_button_preferred_4"></a>
+    <a class="addthis_button_compact"></a>
+    <a class="addthis_counter addthis_bubble_style"></a>
     </div>
-  </div>
-  <footer>
-
-</footer>
-
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-50126c622f3a7566"></script>
+    <!-- AddThis Button END -->
+</div>
 
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
   <script src="../js/plugins.js"></script>
   <script src="../js/script.js"></script>
+
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
   <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    var _gaq=[['_setAccount','UA-6216032-3'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
