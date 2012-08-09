@@ -240,14 +240,14 @@ body {
   	text-align: center;
 	text-transform: uppercase;
 
-    /*-webkit-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
     filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6ñIE9 */
         M11=0.9961946980917455, M12=0.08715574274765817, M21=-0.08715574274765817, M22=0.9961946980917455, sizingMethod='auto expand');
-    zoom: 1;*/
+    zoom: 1;
 }
 
 .buy-button:link, .buy-button:visited, .buy-button {
@@ -285,6 +285,7 @@ body {
     margin: 0 auto 20px;
     max-width: 970px;
     width: 91%;
+    text-align: right;
 }
 
 
