@@ -228,6 +228,7 @@ body {
     background-color: #ececec;
     border: 4px solid #FFFFFF;
     box-shadow: 0 0 1px #CCCCCC;
+    clear: both;
     height: 80%;
     margin: 20px auto;
     max-width: 960px;
@@ -275,10 +276,10 @@ body {
 }
 
 .addthis_toolbox_container {
+    height: 16px;
     margin: 20px auto;
     max-width: 970px;
     width: 91%;
-    text-align: right;
 }
 
 .addthis_toolbox {
@@ -346,28 +347,29 @@ Shop Page
     width: 100%;
 }
 
-.shop p {
+.buy p {
     color: #474747;
 }
 
-.shop form {
+.buy form {
     height: 34px;
     margin-top: 6%;
 }
 
-.shop form input {
+.buy form input {
     display: block;
     margin: 0 auto;
 }
 
-.shop #container span {
+.buy #container span {
     color: #9f9f9f;
     margin-left: 6%;
     margin-right: 6%;
+    margin-top: 10px;
 }
 
-.shop #container h1 {font-size: 100px; line-height: .6em;}
-.shop #container p, .shop #container span {font-size: 12px}
+.buy #container h1 {font-size: 100px; line-height: .6em;}
+.buy #container p, .buy #container span {font-size: 12px}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -380,14 +382,14 @@ Shop Page
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-        .shop h1 {
+        .buy h1 {
             font-size: 100px;
         }
     }
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-        .shop #container h1 {
+        .buy #container h1 {
             font-size: 100px;
         }
 
@@ -398,18 +400,18 @@ Shop Page
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-        .shop #container h1 {
+        .buy #container h1 {
             font-size: 60px;
         }
 
-        .shop #container a {
+        .buy #container a {
             font-size: 40px;
         }
     }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-        .shop #container h1 {
+        .buy #container h1 {
             font-size: 60px;
         }
     }
